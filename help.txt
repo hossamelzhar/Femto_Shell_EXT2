@@ -1,8 +1,13 @@
-# Femto_Shell_EXT2
-The Second Extension  of my simple shell, It becomes more powerful.
-*****************************************************************************************************
 
-It Supports:
+************************************ Welcome To My Simple Shell ***************************************
+
+Author: Hossam Elzhar
+
+Date: 21 OCT 2022
+
+********************************************************************************************************
+
+This Shell Supports:
 
 1- Multiple Commands in single line separated by semicolons ';'
 
@@ -42,4 +47,5 @@ It Supports:
 For Any Bugs, Send Me At My GMAIL: hossam.elzhar1@gmail.com
 Happy Using This Simple Shell.
 
+********************************************************************************************************
 

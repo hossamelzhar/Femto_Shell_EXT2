@@ -65,6 +65,16 @@ int builtin_command_executer(char** command_args, linked_list_T **MyLocals)
 				else{}
 			}
 		}
+		else if( memcmp(command_args[0], "help", 4) == 0 )
+		{
+			command_args = (char**) realloc(command_args, 3 * sizeof(char*));
+			command_args[0] = (char*) realloc(command_args[0], 5 * sizeof(char));
+			command_args[1] = (char*) realloc(command_args[1], 9 * sizeof(char));
+			strcpy(command_args[0], "less");
+			strcpy(command_args[1], "help.txt");
+			command_args[2] = NULL;
+			detect = 0;//Go To External Execution 
+		}
 		else if( memcmp(command_args[0], "exit", 4) == 0 )
 		{
 			detect = 1;
