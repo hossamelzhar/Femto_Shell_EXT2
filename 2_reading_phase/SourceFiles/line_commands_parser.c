@@ -15,7 +15,7 @@ char** line_commands_parser(char line[])
 	char   command_counter = 0;
     char   iterator        = 0;
     char   temp_index      = 0;
-    char   temp_arr[100];
+    char   temp_arr[200];
 
 	char** commands        = (char**) calloc(1, sizeof(char*));
 	commands[0] = NULL;

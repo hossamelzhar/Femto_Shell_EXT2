@@ -5,7 +5,7 @@
 char** get_command_and_files(char command[], char*** files)
 {
 	int  iterator     = 0;
-	char temp_arr[20];
+	char temp_arr[200];
 	int  temp_index   = 0;
 	int  args_counter = 0;
 	int  files_counter= 0;

@@ -9,6 +9,7 @@ char* preprocessor_phase(char *command, linked_list_T *MyLocals, int* equal_char
 	int  index      = 0;
 	int  part_index = 0;
 	int  temp_index = 0;
+	int  detect     = 0;
 	
 	char temp_arr[200];
 	char preprocessed_command[200];
@@ -55,21 +56,24 @@ char* preprocessor_phase(char *command, linked_list_T *MyLocals, int* equal_char
 					strcpy(temp_arr, node_address->var_data);
 					strcat(preprocessed_command, temp_arr);
 					part_index += strlen(temp_arr);
+					detect = 1;
 				}
-				//then check if it is in environment variables
+				else{}
+				//check if it is in environment variables
+				env_var = getenv(temp_arr);
+				if(NULL != env_var)
+				{
+					strcat(preprocessed_command, env_var);
+					part_index += strlen(env_var);
+				}
 				else
 				{
-					env_var = getenv(temp_arr);
-					if(NULL != env_var)
-					{
-						strcat(preprocessed_command, env_var);
-						part_index += strlen(env_var);
-					}
-					else
+					if(detect == 0)
 					{
 						preprocessed_command[part_index] = ' ';
 						part_index++;
 					}
+					else{}
 				}
 			}
 			

@@ -10,7 +10,7 @@ int main(void)
 
 	char *user      = NULL;
 	char *cwd       = NULL;;
-	char line[100];
+	char line[200];
 	char** commands = NULL;
 	char *preprocessed_command = NULL;
 	char** args = NULL;

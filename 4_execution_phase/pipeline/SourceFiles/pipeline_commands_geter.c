@@ -5,7 +5,7 @@
 char** pipeline_commands_geter(char command[])
 {
 	int  iterator   = 0;
-	char temp_arr[100];
+	char temp_arr[200];
 	int  temp_index = 0;
 	char out_temp_file[] = ">TM.txt";
 	char  in_temp_file[] = "<TM.txt";

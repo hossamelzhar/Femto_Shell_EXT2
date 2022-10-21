@@ -7,7 +7,7 @@ char* local_var_parser(char* command, char***args)
 	(*args) = (char**) calloc(2, sizeof(char*));
 	int  iterator   = 0;
 	int  temp_index = 0;
-	char temp_arr[100];
+	char temp_arr[200];
 
 	/****************************************get variable name**************************************************************************/
 	while(command[iterator] != '=') //after this loop finished, iterator will have index of '='; //ISA 

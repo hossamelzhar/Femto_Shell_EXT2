@@ -2,7 +2,7 @@
 
 void begining_ending_spaces_remover(char line[])
 {
-	char  temp_arr[100];
+	char  temp_arr[200];
 	int   temp_index = 0;
 	int   iterator   = 0;
 	
