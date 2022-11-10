@@ -39,7 +39,7 @@ It Supports:
 	
 	* exit   -> Terminate Shell
 	
-For Any Bugs, Send Me At My GMAIL: hossam.elzhar1@gmail.com
+For Any Bugs,  My GMAIL: hossam.elzhar1@gmail.com
 Happy Using This Simple Shell.
 
 
